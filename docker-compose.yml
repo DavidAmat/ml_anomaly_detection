@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  project:
+    image: anomaly_detection_img
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    command: serve
+    ports:
+      - "8080:8080"
+      - "8888:8888"
+    volumes:
+      - .:/usr/src/app
+    user: ${UID:-0}
+    env_file:
+      - .env

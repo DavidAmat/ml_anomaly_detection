@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "anomaly-detection"
+version = "0.1.0"
+description = ""
+authors = ["DavidAmatGlovo <david.amat@glovoapp.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyterlab = "*"
+jedi = "*"
+matplotlib = "*"
+mlflow = "*"
+numpy= "^1.19.5"
+pandas = "^1.2.3"
+pyarrow = "^3.0.0"
+dask = "^2021.3.0"
+distributed = "^2021.3.0"
+PyYAML = "*"
+scikit_learn = "*"
+scipy = "*"
+seaborn = "*"
+xgboost = "^0.90"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pypi_"
+url = "https://pypi.org/simple/"
